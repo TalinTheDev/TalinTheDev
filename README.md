@@ -1,5 +1,5 @@
-<h1 align="center">Hi 👋, I'm TalinSharma @TalinTheDev</h1>
-<h3 align="center">A passionate fullstack developer currently in middle school</h3>
+<h1 align="center">Hi 👋, I'm Talin Sharma @TalinTheDev</h1>
+<h3 align="center">A passionate fullstack developer currently trying to learn ui design</h3>
 <h4 align="center">I love playing my drums 🥁, reading 📖, and practicing twekwondo 🥋</h4>
 <hr/>
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=talinthedev&label=Profile%20views&color=F3764A&style=for-the-badge" alt="talinthedev" /> </p>
