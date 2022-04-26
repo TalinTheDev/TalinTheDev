@@ -1,10 +1,10 @@
 <h1 align="center">Hi 👋, I'm TalinSharma @TalinTheDev</h1>
 <h3 align="center">A passionate fullstack developer currently in middle school</h3>
 <h4 align="center">I love playing my drums 🥁, reading 📖, and practicing twekwondo 🥋 (almost a 1st degree blackbelt!).</h4>
+<hr/>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=talinthedev&label=Profile%20views&color=F3764A&style=for-the-badge" alt="talinthedev" /> </p>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=talinthedev&label=Profile%20views&color=0e75b6&style=flat" alt="talinthedev" /> </p>
-
-<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=talinthedev&margin-w=10" alt="talinthedev" /></a> </p>
+<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=talinthedev&column=3&margin-w=15&margin-h=15&theme=dracula" alt="talinthedev" /></a> </p>
 
 - 🔭 I’m currently working on [@devux](https://github.com/TeamDevux/)
 
