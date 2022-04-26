@@ -4,7 +4,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=talinthedev&label=Profile%20views&color=0e75b6&style=flat" alt="talinthedev" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=talinthedev" alt="talinthedev" /></a> </p>
+<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=talinthedev&margin-w=10" alt="talinthedev" /></a> </p>
 
 - 🔭 I’m currently working on [@devux](https://github.com/TeamDevux/)
 
@@ -14,17 +14,17 @@
 
 - 🤝 I’m looking for help with **N/A**
 
-- 👨‍💻 All of my projects are available at [Coming Soon!](Coming Soon!)
+- 👨‍💻 All of my projects are available at (Coming Soon!)
 
-- 📝 I regularly write articles on [Coming Soon!](Coming Soon!)
+- 📝 I regularly write articles on (Coming Soon!)
 
 - 💬 Ask me about **Web Frontend, Backend**
 
-- 📫 How to reach me **talinsharma.dev@gmail.com**
+- 📫 How to reach me: **talinsharma.dev@gmail.com**
 
-- 📄 Know about my experiences [Coming Soon!](Coming Soon!)
+- 📄 Know about my experiences (Coming Soon!)
 
-- ⚡ Fun fact **I'll have to think about this...**
+- ⚡ Fun fact: **I'll have to think about this...**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
