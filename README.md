@@ -6,7 +6,7 @@
 
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=talinthedev&column=3&margin-w=15&margin-h=15&theme=dracula" alt="talinthedev" /></a> </p>
 
-- 🔭 I’m currently working on [@devux](https://github.com/TeamDevux/)
+- 🔭 I’m currently working on [@LaTopia](https://github.com/LaTopia/)
 
 - 🌱 I’m currently learning **GraphQL, UI Design,**
 
@@ -18,13 +18,10 @@
 
 - 📝 I regularly write articles on (Coming Soon!)
 
-- 💬 Ask me about **Web Frontend, Backend**
+- 💬 Ask me about **Fullstack Web Development, C# Development, Windows Desktop Development**
 
 - 📫 How to reach me: **talinsharma.dev@gmail.com**
 
-- 📄 Know about my experiences (Coming Soon!)
-
-- ⚡ Fun fact: **I'll have to think about this...**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
