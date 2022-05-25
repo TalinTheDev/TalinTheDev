@@ -6,9 +6,9 @@
 
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=talinthedev&column=3&margin-w=15&margin-h=15&theme=dracula" alt="talinthedev" /></a> </p>
 
-- 🔭 I’m currently working on [@LaTopia](https://github.com/LaTopia/)
+- 🔭 I’m currently working on Chatnic
 
-- 🌱 I’m currently learning **GraphQL, UI Design,**
+- 🌱 I’m currently learning **UI Design, Remix**
 
 - 👯 I’m looking to collaborate on **N/A**
 
