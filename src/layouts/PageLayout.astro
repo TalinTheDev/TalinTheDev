@@ -6,11 +6,11 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
   <BaseHead title={title} />
-  <body>
+  <body class="dark-mode">
     <nav>
       <a class="navTitle notLink" href="/">
         <span id="logoTerminal"
-          >&gt;&thinsp;<span id="logoName"
+          >&gt;&nbsp;<span id="logoName"
             ><span id="logoCursor" class="on">&nbsp</span></span
           >
         </span>
@@ -30,22 +30,21 @@ const { title } = Astro.props;
         transition: 0.3s;
       }
       #logoCursor.on {
-        background-color: #000;
+        background-color: var(--color);
       }
       #logoTerminal {
         font-weight: bold;
       }
 
       nav {
-        padding-bottom: 10px;
+        padding: 5px 0px 15px 0px;
         display: grid;
         grid-template-columns: max-content 1fr;
         align-items: center;
-        border-bottom: 3px dashed #000;
+        border-bottom: 3px dashed var(--color);
 
         .navTitle {
-          font-size: 1.75rem;
-          font-weight: 700;
+          font-size: 1.5rem;
           text-decoration: none;
           margin: 0px;
         }

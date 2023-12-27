@@ -1,19 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&display=swap');
+
 :root {
   font-size: 16px;
 
   --primary: #FD6A02;
-  --accent: #0295FD;
+  --accent: #408abf;
+  --background: #fbf7f4;
+  --color: #0d0702;
+}
+
+body.dark-mode {
+  --background: #0d0702;
+  --color: #fbf7f4;
 }
 
 body {
-  font: 1rem 'Courier Prime', monospace;
-  background-color: #FFF;
-  color: #000;
+  font: 1rem 'JetBrains Mono', monospace;
+  background-color: var(--background);
+  color: var(--color);
 
   width: 75vw;
   margin: auto;
   padding: 15px;
   display: block;
+}
+
+h1, h2 ,h3 ,h4, h5, h6 {
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 15px 0px;
 }
 
 a:not(.notLink) {
@@ -29,7 +47,7 @@ a:not(.notLink) {
     background-position 0s 0.3s;
 }
 
-a:not(.notLink):hover {
+a:not(.notLink):not(.noLinkHover):hover {
   background-position: 100% 100%;
   background-size: 100% 3px;
 }

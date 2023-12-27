@@ -1,0 +1,50 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import Card from "../components/Card.astro";
+---
+
+<PageLayout title="Talin Sharma">
+  <h1>Hey, I'm Talin Sharma!</h1>
+  <p>
+    I like learning about computers and coding for fun. I also enjoy messing
+    around with linux and reading about all sorts of new technologies,
+    especially web stuff. I've tried coding in various areas including a lot of
+    game development but I've always been drawn to websites, especially backend.
+  </p>
+  <p>
+    I'll be updating my profile as I work on my website, but for now, contact me
+    at <a href="mailto:talinsharma.dev@gmail.com">talinsharma.dev@gmail.com</a>
+    or check out some (very basic) projects at my github
+    <a href="http://github.com/TalinTheDev">@TalinTheDev</a> and let me know if
+    you have any projects or programs you want me to try out!
+  </p>
+
+  <table class="homeContent">
+    <td class="latestProjects">
+      <h2>Latest Projects</h2>
+    </td>
+    <td class="latestBlog">
+      <h2>Latest Blog Posts</h2>
+      <Card title="Welcome!" desc="My very first blog post!" date="12/27/2023" link="/blog/welcome" linkName="Read now!"
+    </td>
+  </table>
+</PageLayout>
+
+<style scoped>
+  .homeContent {
+    margin: 50px auto auto;
+    min-height: 0.5vh;
+    width: 75vw;
+
+    h2 {
+      font-size: 1.25rem;
+      margin: 0px 25px;
+      text-align: center;
+    }
+
+
+    td:first-of-type {
+      border-right: 2px solid var(--color);
+    }
+  }
+</style>
