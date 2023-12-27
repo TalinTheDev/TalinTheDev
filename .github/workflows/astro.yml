@@ -69,10 +69,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
         
-      - name: Install dependencies
-        run: pnpm instal
-        working-directory: ${{ env.BUILD_PATH }}
-        
       - name: Build with Astro
         run: |
           pnpm run astro build \
