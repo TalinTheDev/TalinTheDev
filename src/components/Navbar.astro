@@ -1,11 +1,5 @@
----
-
----
-
 <nav>
-  <div class="logo">
-    Talin Sharma
-  </div>
+  <div class="logo">Talin Sharma</div>
   <div class="links">
     <a href="/">Home</a>
     <a href="/projects">Projects</a>
@@ -17,6 +11,24 @@
   </div>
 </nav>
 
+<script data-astro-rerun is:inline>
+  let x = 0
+  alert(x)
+  x++
+  const link = document.querySelector(`a[href="${window.location.pathname}"]`);
+  link.id = "active";
+  link.classList.add("pageLink");
+
+  // const links = document.querySelectorAll("nav .links a").forEach((link) => {
+  //   link.addEventListener("click", (e) => {
+  //     alert(e.target.id)
+  //     const linkd = document.querySelector(`a[href="${window.location.pathname}"]`);
+  //     linkd.id = "active";
+  //     linkd.classList.add("pageLink");
+  //   })
+  // })
+</script>
+
 <style scoped>
   nav {
     padding: 35px 0px;
@@ -24,13 +36,13 @@
     grid-template-columns: 1fr 2fr 1fr;
 
     .logo {
-        grid-column: 1;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        font-size: clamp(24px, 1.3vw, 32px);
-        font-weight: 600;
+      grid-column: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: clamp(24px, 1.3vw, 32px);
+      font-weight: 600;
     }
 
     .links {
@@ -44,14 +56,41 @@
         text-decoration: none;
         font-size: clamp(16px, 1.2vw, 20px);
         margin: 0px 1.25vw;
-       }
+        transition: 0.25s;
+        display: inline-block;
+        padding: 5px 10px;
+        position: relative;
+
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background: #000;
+          
+          width: 0;
+        }
+        &:hover:after,
+        &#active:after {
+          width: 100%;
+          left: 0;
+        }
+      }
+      a:not(.pageLink):after {
+        transition:
+            width 0.3s ease 0s,
+            left 0.3s ease 0s;
+      }
     }
 
     .social {
       grid-column: 3;
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
 
       a img {

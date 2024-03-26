@@ -1,0 +1,38 @@
+---
+import Navbar from "../components/Navbar.astro"
+
+import { ViewTransitions } from 'astro:transitions';
+const { title } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" type="text/css" href="/normalize.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>Talin Sharma | {title}</title>
+
+        <ViewTransitions />
+	</head>
+	<body>
+		<Navbar transition:persist/>
+        <slot/>
+	</body>
+    <!-- <script>
+        const links = document.querySelectorAll("nav .links a").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      alert(e.target.id)
+      // const link = document.querySelector(`a[href="${window.location.pathname}"]`);
+      e.target.id = "active";
+      e.target.classList.add("pageLink");
+    })
+  })
+    </script> -->
+</html>
