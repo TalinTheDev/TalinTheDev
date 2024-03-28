@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar.astro"
 
 import { ViewTransitions } from 'astro:transitions';
+
 const { title } = Astro.props;
 ---
 
@@ -18,21 +19,10 @@ const { title } = Astro.props;
 		<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>Talin Sharma | {title}</title>
-
-        <ViewTransitions />
+    <ViewTransitions />
 	</head>
 	<body>
-		<Navbar transition:persist/>
-        <slot/>
+		<Navbar/>
+    <slot transition:animate="slide"/>
 	</body>
-    <!-- <script>
-        const links = document.querySelectorAll("nav .links a").forEach((link) => {
-    link.addEventListener("click", (e) => {
-      alert(e.target.id)
-      // const link = document.querySelector(`a[href="${window.location.pathname}"]`);
-      e.target.id = "active";
-      e.target.classList.add("pageLink");
-    })
-  })
-    </script> -->
 </html>

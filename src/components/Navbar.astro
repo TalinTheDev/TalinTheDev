@@ -11,25 +11,17 @@
   </div>
 </nav>
 
-<script data-astro-rerun is:inline>
-  let x = 0
-  alert(x)
-  x++
-  const link = document.querySelector(`a[href="${window.location.pathname}"]`);
-  link.id = "active";
-  link.classList.add("pageLink");
-
-  // const links = document.querySelectorAll("nav .links a").forEach((link) => {
-  //   link.addEventListener("click", (e) => {
-  //     alert(e.target.id)
-  //     const linkd = document.querySelector(`a[href="${window.location.pathname}"]`);
-  //     linkd.id = "active";
-  //     linkd.classList.add("pageLink");
-  //   })
-  // })
+<script>
+  const activateLink = () => {
+    const link = document.querySelector(`a[href="${window.location.pathname}"]`);
+    link.id = "active";
+    link.classList.add("pageLink");
+  }
+  activateLink();
+  document.addEventListener("astro:after-swap", activateLink)
 </script>
 
-<style scoped>
+<style>
   nav {
     padding: 35px 0px;
     display: grid;
@@ -55,6 +47,7 @@
       a {
         text-decoration: none;
         font-size: clamp(16px, 1.2vw, 20px);
+        color: #000;
         margin: 0px 1.25vw;
         transition: 0.25s;
         display: inline-block;
@@ -73,16 +66,17 @@
           
           width: 0;
         }
-        &:hover:after,
-        &#active:after {
+
+        &:not(.pageLink):after {
+          transition:
+              width 0.3s ease 0s,
+              left 0.3s ease 0s;
+        }
+
+        &:hover:after, &#active:after {
           width: 100%;
           left: 0;
         }
-      }
-      a:not(.pageLink):after {
-        transition:
-            width 0.3s ease 0s,
-            left 0.3s ease 0s;
       }
     }
 
