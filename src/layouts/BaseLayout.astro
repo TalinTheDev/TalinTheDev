@@ -1,8 +1,10 @@
 ---
-const title = Astro.props.title.toLowerCase();
-const link = Astro.props.link;
+import "../styles/reset.css";
+import "../styles/main.css";
+import "../styles/nav.css";
+const title = Astro.props.title[0].toUpperCase() + Astro.props.title.slice(1);
 
-const pageTitle = `/talinthedev/`;
+const pageTitle = `TalinTheDev`;
 ---
 
 <html lang="en">
@@ -12,125 +14,23 @@ const pageTitle = `/talinthedev/`;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}{title}</title>
+    <title>{pageTitle} - {title}</title>
   </head>
   <body>
+    <nav>
+      <a href="/blog">Blog</a>
+      <a href="/projects">Projects</a>
+      <a href="/home" class="homeLink">Talin Sharma</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
     <main>
-      <nav>
-        <div class="pageHeader">
-          <h1 class="siteName">{pageTitle}</h1>
-          <a class="currentPage" href={`/${link}`}>{title}</a>
-        </div>
-        <div class="navLinks">
-          <a href="/home">/home</a>
-          <a href="/blog">/blog</a>
-          <a href="/projects">/projects</a>
-          <a href="/about">/about</a>
-        </div>
-      </nav>
       <slot />
     </main>
   </body>
-  <style is:global>
-    :root {
-      --background: hsl(0, 44%, 95%);
-      --text: hsl(0, 0%, 15%);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --background: hsl(0, 0%, 15%);
-        --text: hsl(0, 44%, 95%);
-      }
-    }
-    html {
-      font-size: calc(60% + 1vmin);
-      font-family: "Chakra Petch", sans-serif;
-      background-color: var(--background);
-      color: var(--text);
-    }
-
-    main {
-      max-width: 50rem;
-      margin: 0 auto;
-    }
-    * {
-      font-size: 1rem;
-    }
-    h1 {
-      font-size: 2.2rem;
-    }
-    h2 {
-      font-size: 1.6rem;
-    }
-    h3 {
-      font-size: 1.3rem;
-    }
-
-    a {
-      text-decoration: none;
-    }
-    a::after {
-      content: "";
-      width: 0px;
-      height: 1px;
-      display: block;
-      background-color: var(--text);
-      transition: 300ms;
-    }
-    a:hover::after {
-      width: 100%;
-    }
-
-    @media only screen and (max-width: 875px) {
-      html {
-        font-size: calc(60% + 0.75vmax);
-      }
-      main {
-        max-width: 85vmin;
-      }
-    }
-  </style>
-  <style>
-    nav {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-
-      a {
-        color: inherit;
-      }
-
-      .pageHeader {
-        display: flex;
-        align-items: baseline;
-        .siteName {
-          margin: 0.75rem 0 1rem;
-        }
-        .currentPage {
-          font-size: 1.5rem;
-          font-weight: 600;
-        }
-      }
-
-      .navLinks {
-        display: flex;
-        gap: 1rem;
-        a {
-          font-size: 1.25rem;
-        }
-      }
-    }
-    @media only screen and (max-width: 875px) {
-      nav {
-        flex-direction: column;
-        margin: 1rem 0 2rem;
-      }
-    }
-  </style>
 </html>
