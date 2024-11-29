@@ -13,16 +13,4 @@ nav {
     font-size: 2rem;
     font-weight: bold;
   }
-
-  .homeLink::before {
-    content: "";
-    width: 0px;
-    height: 1px;
-    display: block;
-    background-color: currentColor;
-    transition: 300ms;
-  }
-  .homeLink:hover::before {
-    width: 100%;
-  }
 }
