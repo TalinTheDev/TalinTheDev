@@ -37,11 +37,22 @@ const pageTitle = `/talinthedev/`;
     </main>
   </body>
   <style is:global>
+    :root {
+      --background: hsl(0, 44%, 95%);
+      --text: hsl(0, 0%, 15%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: hsl(0, 0%, 15%);
+        --text: hsl(0, 44%, 95%);
+      }
+    }
     html {
       font-size: calc(60% + 1vmin);
       font-family: "Chakra Petch", sans-serif;
-      background-color: hsl(0, 0%, 95%);
-      color: hsl(0, 0%, 15%);
+      background-color: var(--background);
+      color: var(--text);
     }
 
     main {
@@ -69,7 +80,7 @@ const pageTitle = `/talinthedev/`;
       width: 0px;
       height: 1px;
       display: block;
-      background: black;
+      background-color: var(--text);
       transition: 300ms;
     }
     a:hover::after {
@@ -92,7 +103,7 @@ const pageTitle = `/talinthedev/`;
       justify-content: space-between;
 
       a {
-        color: initial;
+        color: inherit;
       }
 
       .pageHeader {
