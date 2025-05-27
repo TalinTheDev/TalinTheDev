@@ -1,15 +1,14 @@
 <h1 align="left">Hey 👋 What's up?</h1>
 
-###
 
-<p align="left">My name is Talin Sharma and I'm a student who loves technology, drumming, martial arts, and a lot more!</br>I'm just a chill dude trying to get through life while learning as much as I can and trying to enjoy everything I do.</p>
+<p align="left">My name is Talin Sharma and I'm a student who loves technology, drumming, martial arts, and a lot more!</p>
 
 ###
 
 <h2 align="left">About me</h2>
 
 ###
-
+<p align="left">Just a guy trying to get through life while chilling, learning as much as I can, and trying to enjoy everything I do.</p>
 <p align="left">✨ Creating bugs since 2020<br>📚 I'm currently learning: Advanced C++</p>
 
 ###
@@ -48,6 +47,4 @@
 > Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program. – Linus Torvalds
 <br/>
 
-*P.S. I will update my bio later. Sometime when I get some time.*
-
-###
+*P.S. I will update my bio later. The decently proficient technologies section is heavily outdated. Sometime later though, when I get some time.*
