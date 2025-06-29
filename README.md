@@ -9,7 +9,7 @@
 
 ###
 <p align="left">Just a guy trying to get through life while chilling, learning as much as I can, and trying to enjoy everything I do.</p>
-<p align="left">✨ Creating bugs since 2020<br>📚 I'm currently learning: Advanced C++</p>
+<p align="left">✨ Creating bugs since 2020<br>📚 I'm currently learning: Zig, Raylib, VEX Programming</p>
 
 ###
 
@@ -41,6 +41,8 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
+    <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/zig/zig-original.svg" height="40" alt="docker logo"  />
 </div>
 
 ## Current Favorite Tech Quote
