@@ -9,11 +9,11 @@
 
 ###
 <p align="left">Just a guy trying to get through life while chilling, learning as much as I can, and trying to enjoy everything I do.</p>
-<p align="left">✨ Creating bugs since 2020<br>📚 I'm currently learning: Zig, Raylib, VEX Programming</p>
+<p align="left">✨ Creating bugs since 2020<br>📚 I'm currently learning: OpenGL & Graphics Programming, Advanced C++ & Algorithms, and Robotics (VRC v5) Programming</p>
 
 ###
 
-<h2 align="left">I Am <i>Decently</i> Proficient In</h2>
+<h2 align="left">I Am <i>Somewhat</i> Proficient In</h2>
 
 ###
 
@@ -46,7 +46,8 @@
 </div>
 
 ## Current Favorite Tech Quote
-> Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program. – Linus Torvalds
-<br/>
+> Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.
+> 
+> Brian Kernighan<br/>
 
 *P.S. I will update my bio later. The decently proficient technologies section is heavily outdated. Sometime later though, when I get some time.*
