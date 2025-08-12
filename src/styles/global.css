@@ -1,0 +1,21 @@
+body#light {
+  --bg-color: #f8f9fa;
+  --body-text-color: #051923;
+  --logo-color: #0466c8;
+}
+
+body#dark {
+  --bg-color: #000c1f;
+  --body-text-color: #e0e1dd;
+  --logo-color: #d1495b;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+* {
+  transition: color 100ms ease;
+  transition: background-color 100ms ease;
+}

@@ -7,7 +7,7 @@ return {
 	},
 
 	-- https://mason-registry.dev/registry/list (Linters, Formatters, etc.)
-	mason = { "eslint_d", "prettierd" },
+	mason = { "eslint_d", "prettier" },
 
 	-- https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages
 	treesitter = { "astro", "css", "dockerfile", "gitignore", "html", "javascript", "json5" },
