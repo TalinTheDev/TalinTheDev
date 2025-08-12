@@ -1,5 +1,14 @@
 ---
 import Base from "@layouts/Base.astro";
+
+const posts = Object.values(import.meta.glob("./blog/*.md", { eager: true }));
 ---
 
-<Base title="ThoughtsInHex"> Hello World! </Base>
+<Base title="ThoughtsInHex">
+    <h2>Latest Posts</h2>
+        {
+            posts.map((post) => (
+            <a href={post.url}>{post.frontmatter.title}</a><br/>
+            ))
+        }
+</Base>

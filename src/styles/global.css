@@ -19,3 +19,7 @@ html {
   transition: color 100ms ease;
   transition: background-color 100ms ease;
 }
+
+h1 {
+  font-size: 1.75em;
+}

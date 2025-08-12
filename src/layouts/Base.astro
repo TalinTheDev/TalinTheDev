@@ -25,14 +25,19 @@ const { title } = Astro.props;
 		</div>
 		<slot />
 	</body>
-<script is:inline>
-	var mode = "light";
-	const toggle = () => {
-		if(mode=="light"){mode = "dark";}
-		else {mode = "light";}
-		document.getElementsByTagName("body")[0].id = mode;clear()}</script>
+	<script is:inline>
+		var mode = "light";
+		const toggle = () => {
+			if (mode == "light") {
+				mode = "dark";
+			} else {
+				mode = "light";
+			}
+			document.getElementsByTagName("body")[0].id = mode;
+			clear();
+		};
+	</script>
 </html>
-
 
 <style>
 	body {
@@ -41,4 +46,6 @@ const { title } = Astro.props;
 		background-color: var(--bg-color);
 		color: var(--body-text-color);
 	}
+	#header {
+		margin-bottom: 1em;}
 </style>
