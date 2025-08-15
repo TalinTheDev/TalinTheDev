@@ -1,22 +1,25 @@
 body#light {
-  --bg-color: #f8f9fa;
-  --body-text-color: #051923;
-  --logo-color: #0466c8;
+  --bg-color: #fff;
+  --body-text-color: #000;
+  --logo-color: #000;
 }
 
 body#dark {
-  --bg-color: #000c1f;
-  --body-text-color: #e0e1dd;
-  --logo-color: #d1495b;
+  --bg-color: #000;
+  --body-text-color: #fff;
+  --logo-color: #fff;
 }
 
 body {
-  --link-color: #235789;
+  --link-color: #000;
+  --primary: hsl(213, 84%, 62%);
 }
 
 html {
-  font-family: sans-serif;
-  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+
+  height: 100svh;
 }
 
 * {
@@ -24,42 +27,19 @@ html {
   transition: background-color 100ms ease;
 }
 
-h1 {
-  font-size: 1.5em;
-}
-h1#postTitle,
-h1#projectTitle {
-  text-decoration: underline solid var(--logo-color) 4px;
-  text-underline-offset: 0.5em;
-  margin-bottom: 0.5em;
-}
-h2 {
-  font-size: 1.25em;
-}
-h3 {
-  font-size: 1em;
-}
-
-h4 {
-  font-size: 0.9em;
-}
-h5 {
-  font-size: 0.8em;
-}
-h6 {
-  font-size: 0.7em;
-}
-
 a {
-  color: var(--body-text-color);
+  color: var(--link-color);
 }
 
 a:hover {
-  color: var(--body-text-color);
   font-weight: bold;
   transition: font-weight 100ms linear;
 }
 
 p {
   margin-bottom: 1em;
+}
+
+p:nth-of-type(n + 2) {
+  margin-top: 1em;
 }
