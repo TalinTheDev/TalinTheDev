@@ -5,7 +5,11 @@ const posts = Object.values(import.meta.glob("./blog/*.md", { eager: true }));
 ---
 
 <Base title="Talin Sharma">
-    <h1>Latest Posts</h1>
+    <h1>Hey there! 👋</h1>
+    <p>
+    Welcome to my personal site!</p><p> My name is Talin Sharma and I am a passionate student who has a ton of interests and hobbies!</p>
+    <p>Find out more <a href="/about">about me</a>, read some <a href="/blog">blog posts</a>, or check out some of my <a href="/projects">projects</a>. </p>
+    <h2>Latest Posts</h2>
         {
             posts.map((post) => (
             <a href={post.url}>{post.frontmatter.title}</a><br/>

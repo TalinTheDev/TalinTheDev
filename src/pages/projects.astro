@@ -1,7 +1,16 @@
 ---
 import Base from "@layouts/Base.astro";
+
+const projects = Object.values(import.meta.glob("./projects/*.md", { eager: true }));
 ---
 
 <Base title="Talin Sharma - Projects">
     <h1>Projects</h1>
+    {
+    projects.map((project) => (<>
+    <a href={project.url}>{project.frontmatter.title}</a>
+    <br/>
+    </>
+    ))
+    }
 </Base>
