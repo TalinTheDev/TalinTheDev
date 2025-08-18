@@ -5,9 +5,33 @@ const { frontmatter } = Astro.props;
 ---
 
 <Base title={frontmatter.title}>
-	<h1 id="projectTitle">{frontmatter.title}</h1>
-	<date>{frontmatter.date}</date>
-	<slot /></Base
->
+	<div id="header">
+		<h1 id="postTitle">{frontmatter.title}</h1>
+		<p id="postDescription">{frontmatter.description}</p>
+		<span>Date Started: <date>{frontmatter.started}</date></span>
+		<span>Last Post Edit: <date>{frontmatter.edited}</date></span>
+		<span>Github: <a href=`http://github.com/${frontmatter.github}`>{frontmatter.github}</a></span>
+	</div>
+	<slot />
+</Base>
 
-<style></style>
+<style>
+	#header {
+		width: max-content;
+		padding-bottom: 1em;
+		margin-bottom: 1em;
+
+		h1 {
+			font-size: 3em;
+		}
+
+		span {
+			display: block;
+		}
+
+		span,
+		date {
+			font-style: italic;
+		}
+	}
+</style>
