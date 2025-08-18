@@ -20,14 +20,16 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body id="light">
-		<div id="sidebar"><a href="/">
-
-			<div id="me">				<h1>Talin Sharma</h1>
-				<h2>Programmer. Builder. Learner.</h2>
-			</div></a>
+		<div id="sidebar">
+			<a href="/">
+				<div id="me">
+					<h1>Talin Sharma</h1>
+					<h2>Programmer. Builder. Learner.</h2>
+				</div></a
+			>
 			<nav>
 				<a href="/" id="homeLink" class="current">About</a>
-				<a href="/blog" id="blogLink" >Blog</a>
+				<a href="/blog" id="blogLink">Blog</a>
 				<a href="/projects" id="projectLink">Projects</a>
 				<a href="/contact" id="contactLink">Contact</a>
 			</nav>
@@ -37,7 +39,7 @@ const { title } = Astro.props;
 		</div>
 	</body>
 	<script is:inline>
-		const page = window.location.pathname.split("/").pop();
+		const page = window.location.pathname.split("/")[1];
 		switch (page) {
 			case "":
 				document
@@ -92,7 +94,7 @@ const { title } = Astro.props;
 		margin: auto;
 	}
 
-	@media (min-width:2000px){
+	@media (min-width: 2000px) {
 		body {
 			width: 60%;
 		}
@@ -104,29 +106,29 @@ const { title } = Astro.props;
 		flex-direction: column;
 		display: flex;
 
-		a{
-			text-decoration: none;}
+		a {
+			text-decoration: none;
+		}
 		#me {
 			h1 {
 				font-size: 3.5em;
-
-						}
+			}
 
 			h2 {
 				margin-top: -0.5em;
 				font-size: 1.25em;
-			width:max-content;
-			background: linear-gradient(var(--primary) 0 0 ) bottom left/100% 8px no-repeat;
-			display: inline-block;
-			transition: background-size 0.5s;
-			padding-bottom: 0.5em;
+				width: max-content;
+				background: linear-gradient(var(--primary) 0 0) bottom left/100%
+					8px no-repeat;
+				display: inline-block;
+				transition: background-size 0.5s;
+				padding-bottom: 0.5em;
 			}
-			 font-family: "Mozilla Headline", sans-serif;
+			font-family: "Mozilla Headline", sans-serif;
 		}
 
-
 		nav {
-			margin-top:1.5em;
+			margin-top: 1.5em;
 			display: flex;
 			flex-direction: column;
 			row-gap: 0.25em;
@@ -134,15 +136,16 @@ const { title } = Astro.props;
 			a {
 				text-decoration: none;
 				width: min-content;
-				padding: 0.5em 1em;
+				padding: 0.5em 0em;
 				transition: border 100ms linear;
-				border-left: 0px solid var(--link-color);
+				border-bottom: 0px solid var(--link-color);
 			}
 
-
-			a.current, a:hover {
-				border-left: 8px solid var(--link-color);
+			a.current,
+			a:hover {
 				transition: border 100ms linear;
+				text-shadow: 4px 4px 5px var(--primary);
+				font-weight: bold;
 			}
 		}
 	}
