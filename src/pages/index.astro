@@ -1,39 +1,9 @@
 ---
 import Base from "@layouts/Base.astro";
-
-const posts = Object.values(import.meta.glob("./blog/*.md", { eager: true }));
 ---
 
 <Base title="Talin Sharma">
-    <p>
-        I am a student who loves learning about all sorts of things. My main
-        passions include programming, robotics, taekwowndo, and drumming.
-    </p>
-    <p>
-        I have been programming since 2020 and that's when I started web
-        development as a 6th grader. Since then, I have expanded my programming
-        skill set to include many other types of programming. I love learning
-        and through finding new topics and resources to learn with, I have
-        gotten programming experience in:
-    </p>
-    <ul>
-        <li>Full Stack Web Development</li>
-        <li>Linux & Containerization</li>
-        <li>Systems Programming (w/ Rust & Zig)</li>
-        <li>Game Development (w/ Raylib)</li>
-        <li>Robotics Programming (w/ C++ & PROS)</li>
-        <li>Graphics Programming (w/ C++ & OpenGL)</li>
-    </ul>
-    <p>
-        Through my programming adventures, I have gained skills in problem
-        solving, computer hardware & software architecture/integration, computer
-        networking, and much more. To find out more about my skills, checkout my <a
-            href="/resume">resume</a
-        >. Yay!
-    </p>
-    <p>
-        I also write a blog! Most of my posts are me trying to explain something
-        new that I have recently learned or found out about. Feel free to check
-        them out and leave feedback and comments!
-    </p>
+    <h1>Hey there!</h1>
+    <p>I see you have found my website. Nice.</p>
+    <p>Feel free to check out my <a href="/blog">blog</a>, <a href="/projects">projects</a>, <a href="/resume">resume</a>, or find out a bit <a href="/about">about</a> me. This site is my way of sharing my journey through life with the world. Many parts (especially styling) are still a work in progress. But so is my life. So that's to be expected I guess.</p>
 </Base>
