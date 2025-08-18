@@ -29,11 +29,12 @@ html {
 
 a {
   color: var(--link-color);
+  transition: text-shadow 250ms ease;
 }
 
 a:hover {
-  font-weight: bold;
-  transition: font-weight 100ms linear;
+  transition: text-shadow 250ms ease;
+  text-shadow: 1px 0px 0px currentColor;
 }
 
 p {
