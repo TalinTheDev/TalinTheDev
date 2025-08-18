@@ -10,6 +10,7 @@
 ###
 <p align="left">Just a guy trying to get through life while chilling, learning as much as I can, and trying to enjoy everything I do.</p>
 <p align="left">✨ Creating bugs since 2020<br>📚 I'm currently learning: OpenGL & Graphics Programming, Advanced C++ & Algorithms, and Robotics (VRC v5) Programming</p>
+<p align="left">Find out more about me at <a href="http://talinsharma.is-a.dev">talinsharma.is-a.dev</a></p>
 
 ###
 
