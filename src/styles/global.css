@@ -1,17 +1,16 @@
 body#light {
   --bg-color: #fff;
   --body-text-color: #000;
-  --logo-color: #000;
+  --link-color: #000;
 }
 
 body#dark {
   --bg-color: #000;
   --body-text-color: #fff;
-  --logo-color: #fff;
+  --link-color: #fff;
 }
 
 body {
-  --link-color: #000;
   --primary: hsl(213, 84%, 62%);
 }
 
@@ -22,11 +21,6 @@ html {
   height: 100svh;
 }
 
-* {
-  transition: color 100ms ease;
-  transition: background-color 100ms ease;
-}
-
 a {
   color: var(--link-color);
   transition: text-shadow 250ms ease;
@@ -34,13 +28,12 @@ a {
 
 a:hover {
   transition: text-shadow 250ms ease;
-  text-shadow: 1px 0px 0px currentColor;
+  text-shadow:
+    1px 0px 0px color-mix(in srgb, var(--link-color) 80%, transparent),
+    1px 0px 0px color-mix(in srgb, var(--link-color) 80%, transparent),
+    1px 0px 0px color-mix(in srgb, var(--link-color) 80%, transparent);
 }
 
 p {
-  margin-bottom: 1em;
-}
-
-p:nth-of-type(n + 2) {
-  margin-top: 1em;
+  margin-bottom: 0.5em;
 }

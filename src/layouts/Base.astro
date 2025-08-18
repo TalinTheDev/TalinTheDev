@@ -34,14 +34,15 @@ const { title } = Astro.props;
 				<a href="/blog" id="blogLink">Blog</a>
 				<a href="/projects" id="projectLink">Projects</a>
 				<a href="/about" id="aboutLink">About</a>
+				<button id="themeToggle">Dark</button>
 			</nav>
 		</div>
 		<div id="content">
 			<slot />
 		</div>
-	</body><script>
-		document.addEventListener("astro:page-load", () => {
-			const page = window.location.pathname.split("/")[1];
+<script is:inline>
+	const changeNavHighlight = () => {
+		const page = window.location.pathname.split("/")[1];
 			switch (page) {
 				case "":
 					document
@@ -77,8 +78,32 @@ const { title } = Astro.props;
 					break;
 	
 			}
-		});
-	</script>
+	}
+	const swapTheme = () => {
+		const body = document.getElementsByTagName("body")[0];
+		const toggle = document.getElementById("themeToggle");
+			if(localStorage.getItem("theme") == "dark"){
+				body.id = "dark"
+				toggle.innerText = "Light";
+				}
+	toggle.addEventListener("click", (e) => {
+		if(body.id=="light"){
+			body.id="dark";
+			localStorage.setItem("theme", "dark");
+			toggle.innerText = "Light";
+		} else {
+			body.id="light";
+			localStorage.setItem("theme", "light");
+			toggle.innerText = "Dark";
+		}
+	});}
+	swapTheme();
+	changeNavHighlight();
+	document.addEventListener("astro:after-swap", swapTheme);
+	document.addEventListener("astro:page-load", changeNavHighlight);
+</script>
+	</body><script>
+		</script>
 </html>
 
 <style>
@@ -92,13 +117,13 @@ const { title } = Astro.props;
 		grid-template-columns: 1fr;
 
 		height: 100%;
-		width: 95%;
+		width: 60%;
 		margin: auto;
 	}
 
 	@media (min-width: 2000px) {
 		body {
-			width: 60%;
+			width: 40%;
 		}
 	}
 
@@ -126,7 +151,6 @@ const { title } = Astro.props;
 				width: max-content;
 				background: linear-gradient(var(--primary) 0 0) bottom left/100%
 					8px no-repeat;
-				display: inline-block;
 				transition: background-size 0.5s;
 				padding-bottom: 0.5em;
 			}
@@ -138,7 +162,7 @@ const { title } = Astro.props;
 			display: flex;
 			column-gap: 2em;
 
-			a {
+			a, button {
 				text-decoration: none;
 				width: min-content;
 				padding: 0.5em;
@@ -146,13 +170,29 @@ const { title } = Astro.props;
 				text-shadow: 0px 0px 10px transparent;
 			}
 
+		button {
+			background-color: transparent;
+			border: none;
+			padding: 0;
+			color: var(--link-color);
+			font-size: 0.65em;
+		}
 			a.current,
-			a:hover {
+		a:hover, button:hover {
 				transition: text-shadow 250ms ease;
 				text-shadow:
-					0px 0px 10px var(--primary),
+					0px 0px 15px var(--primary),
+					0px 0px 15px var(--primary),
+					0px 0px 15px var(--primary),
+					1px 0px 0px
+						color-mix(in srgb, var(--link-color) 80%, transparent),
+					1px 0px 0px
+						color-mix(in srgb, var(--link-color) 80%, transparent),
+					1px 0px 0px
+						color-mix(in srgb, var(--link-color) 80%, transparent),
 					1px 0px 0px
 						color-mix(in srgb, var(--link-color) 80%, transparent);
+
 			}
 		}
 	}
