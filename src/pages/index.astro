@@ -1,9 +1,88 @@
 ---
-import Base from "@layouts/Base.astro";
+
 ---
 
-<Base title="Talin Sharma">
-    <h1>Hey there!</h1>
-    <p>I see you have found my website. Nice.</p>
-    <p>Feel free to check out my <a href="/blog">blog</a>, <a href="/projects">projects</a>, <a href="/resume">resume</a>, or find out a bit <a href="/about">about</a> me. This site is my way of sharing my journey through life with the world. Many parts (especially styling) are still a work in progress. But so is my life. So that's to be expected I guess.</p>
-</Base>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Rock+Salt&display=swap"
+            rel="stylesheet"
+        />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Talin Sharma</title>
+
+        <style>
+            html {
+                height: 100%;
+            }
+            body {
+                min-height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Belanosima", sans-serif;
+                font-weight: 400;
+            }
+            #page {
+                text-align: center;
+                padding-bottom: 10%;
+            }
+            h1 {
+                font-size: 48px;
+                font-family: "Rock Salt", cursive;
+                position: relative;
+                margin-top: 0;
+                margin-bottom: -1%;
+            }
+
+            h1:before {
+                content: "";
+                display: block;
+                border-top: solid 5px #f58d42;
+                width: 150%;
+                height: 1px;
+                position: absolute;
+                top: 50%;
+                left: -25%;
+                z-index: 1;
+            }
+            h1 span.title {
+                background: #fff;
+                padding: 0 40px;
+                position: relative;
+                z-index: 2;
+            }
+
+            a {
+                display: block;
+                line-height: 24px;
+                color: #426cf5;
+            }
+            span:not(.title) {
+                color: #999999;
+                font-style: italic;
+                line-height: 28px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page">
+            <h1><span class="title">Talin Sharma</span></h1>
+            <p>Nothing to see here... for now.</p>
+            <a href="http://github.com/TalinTheDev">@TalinTheDev</a>
+            <a href="mailto:talinsharma.dev@gmail.com"
+                >talinsharma.dev@gmail.com</a
+            >
+            <br />
+            <br />
+            <span
+                >“Play is the highest form of research”<br />Albert Einstein</span
+            >
+        </div></body
+    >
+</html>
