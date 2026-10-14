@@ -1,16 +1,20 @@
-# Hi, I'm Talin Sharma
+<h3>hey, i'm talin<br/>
+<sub> robotics enthusiast · systems programmer · professional overthinker</sub>
+</h3>
 
+---
 
-I'm a passionate programmer focused on robotics and computer engineering. I love sharing my knowledge with others and learning everything I can.
+i like figuring out how things work under the hood before rebuilding them from scratch.
 
-<div align="center">
+i'm interested in robotics, computer engineering, and graphics/systems programming<br/>most of my time goes toward building things, breaking them, and learning something along the way
 
-![Skills](https://skillicons.dev/icons?i=c,cpp,rust,zig,js,linux)
+usually working with:<br/>
+C ／ C++ ／ Rust ／ Zig ／ JavaScript ／ Linux
 
-</div>
+contact me at:<br/>
+[website](http://talinsharma.is-a.dev) · [linkedin](https://www.linkedin.com/in/talin-sharma-970509420/) · [email](mailto:talinsharma.dev@gmail.com) · [github](https://github.com/TalinTheDev)
 
-<div align="center">
-
-[![Website](https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](http://talinsharma.is-a.dev) [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:talinsharma.dev@gmail.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/talin-sharma-970509420/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TalinTheDev)
-
-</div>
+<hr/>
+<div align="right">
+    <sub>"Programming isn't about what you know; it's about what you can figure out." <br/>
+- Chris Pine</sub></div>
